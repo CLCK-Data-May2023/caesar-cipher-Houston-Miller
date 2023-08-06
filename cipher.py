@@ -15,7 +15,6 @@ def encrypt(text):
             ciphertext += character
     return ciphertext
 
-print("Enter Text to Encrypt")
-text = input()
+text = input("Enter Text to Encrypt")
 ciphertext = encrypt(text)
 print('The encrypted sentence is:' + ' ' + ciphertext)
