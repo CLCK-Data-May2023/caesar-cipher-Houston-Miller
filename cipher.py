@@ -5,6 +5,7 @@ def encrypt(text):
     ciphertext = ''
     shift = 5
     for character in text:
+        character = character.lower()
         if character in alphabet:
             position = alphabet.find(character)
             new_position = (position + shift) % 26
@@ -14,6 +15,6 @@ def encrypt(text):
             ciphertext += character
     return ciphertext
 print("Enter Text to Encrypt")
-text = input().lower()
+text = input()
 ciphertext = encrypt(text)
 print(ciphertext)
