@@ -14,7 +14,8 @@ def encrypt(text):
         else:
             ciphertext += character
     return ciphertext
+
 print("Enter Text to Encrypt")
 text = input()
 ciphertext = encrypt(text)
-print(ciphertext)
+print('The encrypted sentence is:' + ' ' + ciphertext)
