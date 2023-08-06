@@ -14,6 +14,6 @@ def encrypt(text):
             ciphertext += character
     return ciphertext
 print("Enter Text to Encrypt")
-text = input()
+text = input().lower()
 ciphertext = encrypt(text)
 print(ciphertext)
