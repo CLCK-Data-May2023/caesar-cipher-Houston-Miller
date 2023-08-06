@@ -12,7 +12,7 @@ def encrypt(text):
             ciphertext += new_character
         else:
             ciphertext += character
-    
+    return ciphertext
 print("Enter Text to Encrypt")
 text = input()
 ciphertext = encrypt(text)
